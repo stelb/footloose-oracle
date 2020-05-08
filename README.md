@@ -6,6 +6,8 @@ needs docker, ansible 2.? <= 2.8, footloose
 
 i use ansible-oracle as submodules
 
+    docker create network oracle-net  # needed to make dns work
+
     footloose create
 
     ansible-playbook ora.yml
