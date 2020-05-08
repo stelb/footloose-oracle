@@ -1,0 +1,6 @@
+---
+disable_selinux: no # no selinux installed
+configure_etc_hosts: no # not possible in docker
+oracle_sysctl: {} # no sysctl in docker 
+oracle_hugepages: {} # dito
+transparent_hugepage_disable: []

@@ -1,0 +1,14 @@
+cluster:
+  name: oracle
+  privateKey: oracle-key
+machines:
+- count: 1
+  spec:
+    backend: docker
+    image: quay.io/footloose/centos7:0.6.3
+    name: ora%d
+    portMappings:
+    - containerPort: 22
+    - containerPort: 1521
+    networks:
+      - oracle-net
